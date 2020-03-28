@@ -5,4 +5,9 @@
     overflow-y: scroll;
     z-index: 10;
     height: 100%;
+    -ms-overflow-style: none;
+}
+
+.body-container::-webkit-scrollbar {
+    display: none;
 }
