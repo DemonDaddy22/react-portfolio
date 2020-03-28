@@ -8,7 +8,7 @@ export default class PortfolioNavbar extends React.Component {
     render = () => {
         return (
             <Navbar className='pd-5' expand='md' variant={this.props.variant}>
-                <Navbar.Brand className='nav-title ml-2' href='#home'>Shades of Demon</Navbar.Brand>
+                <Navbar.Brand className='nav-title ml-2' href='/'>Shades of Demon</Navbar.Brand>
                 <Navbar.Toggle aria-controls='basic-navbar-nav' />
                 <Navbar.Collapse id='basic-navbar-nav' className='ml-auto' style={{ flexGrow: 'inherit' }}>
                     <Nav>
