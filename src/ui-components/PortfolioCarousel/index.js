@@ -13,7 +13,7 @@ export default class PortfolioCarousel extends React.Component {
 
     render = () => {
         return (
-            <Carousel activeIndex={this.state.index} onSelect={this.handleSelectIndex}>
+            <Carousel activeIndex={this.state.index} onSelect={this.handleSelectIndex} >
                 <Carousel.Item>
                     <img
                         className="d-block w-100"

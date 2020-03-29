@@ -6,6 +6,8 @@ import Page from '../../../ui-components/Page';
 import { Row, Col, Container } from 'react-bootstrap';
 import { Fade } from 'react-reveal';
 import PortfolioCarousel from '../../../ui-components/PortfolioCarousel';
+import PortfolioGalleryCarousel from '../../../ui-components/PortfolioGalleryCarousel';
+import PortfolioFooter from '../../../ui-components/PortfolioFooter';
 
 export default class Home extends React.Component {
     render = () => {
@@ -80,24 +82,25 @@ export default class Home extends React.Component {
                                 <Col sm={12} md={5} className='gallery-header-title h2 text-shadow-light outline-black'>Gallery</Col>
                                 <Col md={1} ><div className='divider'></div></Col>
                                 <Col sm={12} md={6} className='blockquote'>
-                                    <div className='text-white'><em>"Learning to write programs stretches your mind, and helps you think better,
-                                        creates a way of thinking about things that I think is helpful in all domains."</em></div>
-                                    <div className='blockquote-footer mt-4 text-white'>Bill Gates</div>
+                                    <div className='text-white'><em>"Photography takes an instant out of time, 
+                                        altering life by holding it still."</em></div>
+                                    <div className='blockquote-footer mt-4 text-white'>Dorothea Lange</div>
                                 </Col>
                             </Row>
                         </Container>
                     </Fade>
                 </div>
                 <Container className='gallery'>
-                    <Row>
-                        <Col sm={12} md={6}><PortfolioCarousel /></Col>
-                        <Col sm={12} md={6}><PortfolioCarousel /></Col>
+                    <Row style={{marginTop: 100}}>
+                        <Col sm={12} md={6}><PortfolioGalleryCarousel interval={4000} /></Col>
+                        <Col sm={12} md={6}><PortfolioGalleryCarousel interval={4600} /></Col>
                     </Row>
-                    <Row style={{ marginTop: 60 }}>
-                        <Col sm={12} md={6}><PortfolioCarousel /></Col>
-                        <Col sm={12} md={6}><PortfolioCarousel /></Col>
+                    <Row style={{marginBottom: 100}}>
+                        <Col sm={12} md={6}><PortfolioGalleryCarousel interval={5000} /></Col>
+                        <Col sm={12} md={6}><PortfolioGalleryCarousel interval={3500} /></Col>
                     </Row>
                 </Container>
+                <PortfolioFooter />
             </Page>
         )
     }
