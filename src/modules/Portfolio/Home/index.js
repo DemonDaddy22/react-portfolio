@@ -73,6 +73,31 @@ export default class Home extends React.Component {
                 <div className='projects-carousel'>
                     <PortfolioCarousel />
                 </div>
+                <div className='gallery-header'>
+                    <Fade bottom>
+                        <Container>
+                            <Row style={{ padding: '80px 0' }}>
+                                <Col sm={12} md={5} className='gallery-header-title h2 text-shadow-light outline-black'>Gallery</Col>
+                                <Col md={1} ><div className='divider'></div></Col>
+                                <Col sm={12} md={6} className='blockquote'>
+                                    <div className='text-white'><em>"Learning to write programs stretches your mind, and helps you think better,
+                                        creates a way of thinking about things that I think is helpful in all domains."</em></div>
+                                    <div className='blockquote-footer mt-4 text-white'>Bill Gates</div>
+                                </Col>
+                            </Row>
+                        </Container>
+                    </Fade>
+                </div>
+                <Container className='gallery'>
+                    <Row>
+                        <Col sm={12} md={6}><PortfolioCarousel /></Col>
+                        <Col sm={12} md={6}><PortfolioCarousel /></Col>
+                    </Row>
+                    <Row style={{ marginTop: 60 }}>
+                        <Col sm={12} md={6}><PortfolioCarousel /></Col>
+                        <Col sm={12} md={6}><PortfolioCarousel /></Col>
+                    </Row>
+                </Container>
             </Page>
         )
     }

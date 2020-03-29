@@ -102,7 +102,17 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.projects-header-title {
+.gallery-header {
+    width: 100%;
+    background: #C33764;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.projects-header-title, .gallery-header-title {
     color: #ffffff;
     letter-spacing: 0.3px;
     text-transform: uppercase;
@@ -136,6 +146,10 @@
     -moz-animation-duration: 20s;
     -moz-animation-timing-function: ease;
     -moz-animation-iteration-count: infinite;
+}
+
+.gallery {
+    margin: 60px auto;
 }
 
 @keyframes borderColor {
