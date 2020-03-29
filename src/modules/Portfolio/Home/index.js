@@ -14,7 +14,7 @@ export default class Home extends React.Component {
         return (
             <Page>
                 <div className='navbar-bg'>
-                    <PortfolioNavbar variant='dark' linkColor='text-white' />
+                    <PortfolioNavbar variant='dark' linkColor='text-white' page='home' />
                     <div className='d-none d-md-block' style={{ height: '6rem' }}></div>
                     <Row style={{ marginTop: '4rem' }}>
                         <Col md={2} />
@@ -32,7 +32,7 @@ export default class Home extends React.Component {
                         <Col md={2} />
                     </Row>
                 </div>
-                <Container>
+                <Container id='about'>
                     <div id='about-section'>
                         <Fade bottom>
                             <div className='h2 text-theme font-weight-bold text-shadow-light text-center'>Bit About Me</div>

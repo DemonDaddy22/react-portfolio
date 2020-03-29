@@ -20,12 +20,13 @@
     color: rgba(247, 89, 142, 0.4);
 }
 
-.nav-item {
+.navbar-item {
     margin-left: auto;
-    margin-right: 6px;
+    margin-left: 20px;
+    font-weight: 600;
 }
 
-.navbar-nav .nav-item:hover {
+.navbar-nav .navbar-item:hover {
     cursor: pointer;
     color: rgba(167, 226, 250, 0.8) !important;
     transition: all ease 0.4s;
