@@ -119,3 +119,57 @@
     border-radius: 8px;
     margin: 0 auto;
 }
+
+.projects-carousel {
+    margin: 40px;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: 16px outset #E6BE8A;
+    animation-name: borderColor;
+    animation-duration: 20s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: borderColor;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: borderColor;
+    -moz-animation-duration: 20s;
+    -moz-animation-timing-function: ease;
+    -moz-animation-iteration-count: infinite;
+}
+
+@keyframes borderColor {
+    0% {
+        border-color: #6cee6e;
+    }
+    10% {
+        border-color: #f3f190;
+    }
+    20% {
+        border-color: #ee8a6c;
+    }
+    30% {
+        border-color: #ee6cbc;
+    }
+    40% {
+        border-color: #af6cee;
+    }
+    50% {
+        border-color: #6cdaee;
+    }
+    60% {
+        border-color: #af6cee;
+    }
+    70% {
+        border-color: #ee6cbc;
+    }
+    80% {
+        border-color: #ee8a6c;
+    }
+    90% {
+        border-color: #f3f190;
+    }
+    100% {
+        border-color: #6cee6e;
+    }
+}

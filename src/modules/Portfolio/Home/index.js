@@ -5,6 +5,7 @@ import PortfolioNavbar from '../../../ui-components/PortfolioNavbar';
 import Page from '../../../ui-components/Page';
 import { Row, Col, Container } from 'react-bootstrap';
 import { Fade } from 'react-reveal';
+import PortfolioCarousel from '../../../ui-components/PortfolioCarousel';
 
 export default class Home extends React.Component {
     render = () => {
@@ -68,6 +69,9 @@ export default class Home extends React.Component {
                             </Row>
                         </Container>
                     </Fade>
+                </div>
+                <div className='projects-carousel'>
+                    <PortfolioCarousel />
                 </div>
             </Page>
         )
