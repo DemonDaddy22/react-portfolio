@@ -8,7 +8,7 @@ export default class PortfolioNavbar extends React.Component {
 
     scrollMore = () => {
         const body = document.querySelector('.body-container');
-        const about = body.querySelector('#about');
+        const about = body.querySelector('#about-section');
         about.scrollIntoView({ behavior: 'smooth' });
     }
 

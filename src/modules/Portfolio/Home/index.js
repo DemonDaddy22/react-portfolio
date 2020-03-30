@@ -32,7 +32,7 @@ export default class Home extends React.Component {
                         <Col md={2} />
                     </Row>
                 </div>
-                <Container id='about'>
+                <Container>
                     <div id='about-section'>
                         <Fade bottom>
                             <div className='h2 text-theme font-weight-bold text-shadow-light text-center'>Bit About Me</div>
