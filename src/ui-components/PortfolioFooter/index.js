@@ -5,11 +5,21 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 export default class PortfolioFooter extends React.Component {
 
+    scrollTo = () => {
+        const body = document.querySelector('.body-container');
+        body.scroll({ top: 0, left: 0, behavior: 'smooth' });
+    }
+
+    handleUrlClick = url => e => {
+        e.stopPropagation();
+        window.open(url);
+    }
+
     render = () => {
         return (
-            <div style={{backgroundColor: this.props.color}} className='footer-container'>
+            <div style={{backgroundColor: this.props.bgColor}} className='footer-container'>
                 <div className='footer-navigate'>
-                    <i style={{color: this.props.color}} className="fas fa-arrow-alt-circle-up navigate-top"></i>
+                    <i onClick={() => this.scrollTo()} style={{color: this.props.color}} className="fas fa-arrow-alt-circle-up navigate-top"></i>
                 </div>
                 <div className='footer-content'>
                     <div className='container' style={{height: '100%'}}>
@@ -22,13 +32,13 @@ export default class PortfolioFooter extends React.Component {
                             <div className='col-sm-12 col-md-3 footer-col'>
                                 <div className='footer-header'>Want to get in touch?</div>
                                 <div className='footer-email'>
-                                    <a href='mailto:guptarohan1.rg@gmail.com'>guptarohan1.rg@gmail.com</a>
+                                    <a style={{color: this.props.color}} href='mailto:guptarohan1.rg@gmail.com'>guptarohan1.rg@gmail.com</a>
                                 </div>
                             </div>
                             <div className='col-sm-12 col-md-2 footer-col'>
                                 <div className='footer-header'>
-                                    <div className='logo footer-logo'><i className="fab fa-github"></i></div>
-                                    <div className='logo footer-logo'><i class="fab fa-linkedin-in"></i></div>
+                                    <div className='logo footer-logo' onClick={this.handleUrlClick('https://github.com/DemonDaddy22/')}><i className="fab fa-github"></i></div>
+                                    <div className='logo footer-logo' onClick={this.handleUrlClick('https://www.linkedin.com/in/rohangupta22/')}><i class="fab fa-linkedin-in"></i></div>
                                 </div>
                             </div>
                         </div>

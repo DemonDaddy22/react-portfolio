@@ -10,6 +10,12 @@ import PortfolioGalleryCarousel from '../../../ui-components/PortfolioGalleryCar
 import PortfolioFooter from '../../../ui-components/PortfolioFooter';
 
 export default class Home extends React.Component {
+
+    handleUrlClick = url => e => {
+        e.stopPropagation();
+        window.open(url);
+    }
+
     render = () => {
         return (
             <Page>
@@ -19,14 +25,14 @@ export default class Home extends React.Component {
                     <Row style={{ marginTop: '4rem' }}>
                         <Col md={2} />
                         <Col md={8} className='text-center text-white' >
-                            <h1 className='display-4 font-weight-bold text-shadow-dark outline-black'>Hi, I'am Rohan Gupta</h1>
+                            <div className='display-4 font-weight-bold text-shadow-light outline-black'>Hi, I'am Rohan Gupta</div>
                             <div className='bio-text mt-4 px-4'>I am a Software Development Engineer at OYO Rooms, who's passionate about coding and web-development in particular. Also, I'm ever-ready for FIFA and Cricket!</div>
                             <div className='bio-logos'>
-                                <div className='logo'><i className="fab fa-github"></i></div>
-                                <div className='logo'><i class="fab fa-linkedin-in"></i></div>
-                                <div className='logo'><i class="fab fa-twitter"></i></div>
-                                <div className='logo'><i className="fab fa-instagram"></i></div>
-                                <div className='logo'><i className="fab fa-facebook-f"></i></div>
+                                <div className='logo' onClick={this.handleUrlClick('https://github.com/DemonDaddy22/')}><i className="fab fa-github"></i></div>
+                                <div className='logo' onClick={this.handleUrlClick('https://www.linkedin.com/in/rohangupta22/')}><i class="fab fa-linkedin-in"></i></div>
+                                <div className='logo' onClick={this.handleUrlClick('https://twitter.com/Showstopper_RG')}><i class="fab fa-twitter"></i></div>
+                                <div className='logo' onClick={this.handleUrlClick('https://www.instagram.com/rg_rohan1/')}><i className="fab fa-instagram"></i></div>
+                                <div className='logo' onClick={this.handleUrlClick('https://www.facebook.com/demondaddy22')}><i className="fab fa-facebook-f"></i></div>
                             </div>
                         </Col>
                         <Col md={2} />

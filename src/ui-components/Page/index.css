@@ -1,4 +1,5 @@
 .body-container {
+    scroll-behavior: smooth;
     border-radius: 6px;
     background-color: #fff;
     overflow-x: hidden;
