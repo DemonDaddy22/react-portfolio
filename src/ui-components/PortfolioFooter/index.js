@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './index.css';
-import { Container, Row, Col } from 'react-bootstrap';
 
 export default class PortfolioFooter extends React.Component {
 

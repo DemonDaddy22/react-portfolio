@@ -1,0 +1,27 @@
+.project-row {
+    padding: 6rem 0 2rem 0;
+}
+
+.project-img {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+}
+
+.project-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+.next-section-btn {
+    font-size: 2.5rem;
+    opacity: 0.85;
+}
+
+.next-section-btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
