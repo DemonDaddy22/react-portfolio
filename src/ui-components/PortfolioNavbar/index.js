@@ -8,7 +8,7 @@ export default class PortfolioNavbar extends React.Component {
     scrollTo = sectionId => {
         const body = document.querySelector('.body-container');
         const section = body.querySelector(sectionId);
-        section.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(section.scrollIntoView({ behavior: 'smooth' }), 500);
     }
 
     handleUrlClick = url => e => {
