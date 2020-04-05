@@ -4,6 +4,7 @@ import './index.css';
 import Page from '../../../ui-components/Page';
 import PortfolioNavbar from '../../../ui-components/PortfolioNavbar';
 import { Row, Col } from 'react-bootstrap';
+import { Fade } from 'react-reveal';
 import ProjectRow from './components/ProjectRow';
 
 export default class extends React.Component {
@@ -28,12 +29,14 @@ export default class extends React.Component {
                     <Row style={{ marginTop: '3rem' }}>
                         <Col md={2} />
                         <Col className='text-white' md={6}>
-                            <div className='display-4 font-weight-bold text-shadow-light outline-black'>PROJECTS</div>
-                            <div className='mt-5'>
-                                I have worked with various technologies like Python, NodeJS, Express, ReactJS, HTML, CSS,
-                                JavaScript, MySQL and MongoDB for creating numerous projects. Here is a list of some of my
-                                projects. For complete code and more projects, visit my <span className='inline-link' onClick={this.handleUrlClick('https://github.com/DemonDaddy22/')}>Github profile</span>.
-                            </div>
+                            <Fade bottom>
+                                <div className='display-4 font-weight-bold text-shadow-light outline-black'>PROJECTS</div>
+                                <div className='mt-5'>
+                                    I have worked with various technologies like Python, NodeJS, Express, ReactJS, HTML, CSS,
+                                    JavaScript, MySQL and MongoDB for creating numerous projects. Here is a list of some of my
+                                    projects. For complete code and more projects, visit my <span className='inline-link' onClick={this.handleUrlClick('https://github.com/DemonDaddy22/')}>Github profile</span>.
+                                </div>
+                            </Fade>
                         </Col>
                     </Row>
                     <div style={{ height: '4rem' }}></div>

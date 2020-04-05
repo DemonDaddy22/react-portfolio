@@ -25,14 +25,26 @@ export default class Home extends React.Component {
                     <Row style={{ marginTop: '4rem' }}>
                         <Col md={2} />
                         <Col md={8} className='text-center text-white' >
-                            <div className='display-4 font-weight-bold text-shadow-light outline-black'>Hi, I'am Rohan Gupta</div>
-                            <div className='bio-text mt-4 px-4'>I am a Software Development Engineer at OYO Rooms, who's passionate about coding and web-development in particular. Also, I'm ever-ready for FIFA and Cricket!</div>
+                            <Fade bottom>
+                                <div className='display-4 font-weight-bold text-shadow-light outline-black'>Hi, I'm Rohan Gupta</div>
+                                <div className='bio-text mt-4 px-4'>I am a Software Development Engineer at OYO Rooms, who's passionate about coding and web-development in particular. Also, I'm ever-ready for FIFA and Cricket!</div>
+                            </Fade>
                             <div className='bio-logos'>
-                                <div className='logo' onClick={this.handleUrlClick('https://github.com/DemonDaddy22/')}><i className="fab fa-github"></i></div>
-                                <div className='logo' onClick={this.handleUrlClick('https://www.linkedin.com/in/rohangupta22/')}><i class="fab fa-linkedin-in"></i></div>
-                                <div className='logo' onClick={this.handleUrlClick('https://twitter.com/Showstopper_RG')}><i class="fab fa-twitter"></i></div>
-                                <div className='logo' onClick={this.handleUrlClick('https://www.instagram.com/rg_rohan1/')}><i className="fab fa-instagram"></i></div>
-                                <div className='logo' onClick={this.handleUrlClick('https://www.facebook.com/demondaddy22')}><i className="fab fa-facebook-f"></i></div>
+                                <Fade bottom delay={1000}>
+                                    <div className='logo' onClick={this.handleUrlClick('https://github.com/DemonDaddy22/')}><i className="fab fa-github"></i></div>
+                                </Fade>
+                                <Fade bottom delay={1200}>
+                                    <div className='logo' onClick={this.handleUrlClick('https://www.linkedin.com/in/rohangupta22/')}><i class="fab fa-linkedin-in"></i></div>
+                                </Fade>
+                                <Fade bottom delay={1400}>
+                                    <div className='logo' onClick={this.handleUrlClick('https://twitter.com/Showstopper_RG')}><i class="fab fa-twitter"></i></div>
+                                </Fade>
+                                <Fade bottom delay={1600}>
+                                    <div className='logo' onClick={this.handleUrlClick('https://www.instagram.com/rg_rohan1/')}><i className="fab fa-instagram"></i></div>
+                                </Fade>
+                                <Fade bottom delay={1800}>
+                                    <div className='logo' onClick={this.handleUrlClick('https://www.facebook.com/demondaddy22')}><i className="fab fa-facebook-f"></i></div>
+                                </Fade>
                             </div>
                         </Col>
                         <Col md={2} />
@@ -64,44 +76,48 @@ export default class Home extends React.Component {
                     </div>
                 </Container>
                 <div className='projects-header'>
-                    <Fade bottom>
-                        <Container>
-                            <Row style={{ padding: '80px 0' }}>
-                                <Col sm={12} md={5} className='projects-header-title h2 text-shadow-light outline-black'>Projects</Col>
-                                <Col md={1} ><div className='divider'></div></Col>
-                                <Col sm={12} md={6} className='blockquote'>
+                    <Container>
+                        <Row style={{ padding: '80px 0' }}>
+                            <Col sm={12} md={5} className='projects-header-title h2 text-shadow-light outline-black'>
+                                <Fade left>Projects</Fade>
+                            </Col>
+                            <Col md={1} ><div className='divider'></div></Col>
+                            <Col sm={12} md={6} className='blockquote'>
+                                <Fade right>
                                     <div className='text-white'><em>"Learning to write programs stretches your mind, and helps you think better,
                                         creates a way of thinking about things that I think is helpful in all domains."</em></div>
                                     <div className='blockquote-footer mt-4 text-white'>Bill Gates</div>
-                                </Col>
-                            </Row>
-                        </Container>
-                    </Fade>
+                                </Fade>
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
                 <div className='projects-carousel'>
                     <PortfolioCarousel />
                 </div>
                 <div className='gallery-header'>
-                    <Fade bottom>
-                        <Container>
-                            <Row style={{ padding: '80px 0' }}>
-                                <Col sm={12} md={5} className='gallery-header-title h2 text-shadow-light outline-black'>Gallery</Col>
-                                <Col md={1} ><div className='divider'></div></Col>
-                                <Col sm={12} md={6} className='blockquote'>
-                                    <div className='text-white'><em>"Photography takes an instant out of time, 
+                    <Container>
+                        <Row style={{ padding: '80px 0' }}>
+                            <Col sm={12} md={5} className='gallery-header-title h2 text-shadow-light outline-black'>
+                                <Fade left>Gallery</Fade>
+                            </Col>
+                            <Col md={1} ><div className='divider'></div></Col>
+                            <Col sm={12} md={6} className='blockquote'>
+                                <Fade right>
+                                    <div className='text-white'><em>"Photography takes an instant out of time,
                                         altering life by holding it still."</em></div>
                                     <div className='blockquote-footer mt-4 text-white'>Dorothea Lange</div>
-                                </Col>
-                            </Row>
-                        </Container>
-                    </Fade>
+                                </Fade>
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
                 <Container className='gallery'>
-                    <Row style={{marginTop: 100}}>
+                    <Row style={{ marginTop: 100 }}>
                         <Col sm={12} md={6}><PortfolioGalleryCarousel interval={4000} /></Col>
                         <Col sm={12} md={6}><PortfolioGalleryCarousel interval={4600} /></Col>
                     </Row>
-                    <Row style={{marginBottom: 100}}>
+                    <Row style={{ marginBottom: 100 }}>
                         <Col sm={12} md={6}><PortfolioGalleryCarousel interval={5000} /></Col>
                         <Col sm={12} md={6}><PortfolioGalleryCarousel interval={3500} /></Col>
                     </Row>
