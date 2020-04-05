@@ -16,7 +16,7 @@ export default class ProjectRow extends React.Component {
                         <div className={`col-sm-12 col-md-7 text-center order-1 order-md-${this.props.contentOrder}`}>
                             <Row className='justify-content-center'>
                                 <div className='col-10'>
-                                    <div className='project-title my-3'>{this.props.title}</div>
+                                    <div className='project-title mt-2 my-4'>{this.props.title}</div>
                                     <ul className='project-content text-left'>
                                     {this.props.content.map((entry, index) => {
                                         return (
@@ -29,7 +29,7 @@ export default class ProjectRow extends React.Component {
                         </div>
                     </Row>
                 </Container>
-                { this.props.index !==6 && <div className='text-center'><i className='fas fa-chevron-down next-section-btn'></i></div> }
+                { this.props.index !==6 && <div className='text-center'><i onClick={() => this.props.scrollTo(`#row-${this.props.index+1}`)} className='fas fa-chevron-down next-section-btn'></i></div> }
             </div>
         );
     }

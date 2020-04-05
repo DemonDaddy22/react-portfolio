@@ -13,6 +13,12 @@ export default class extends React.Component {
         window.open(url);
     }
 
+    scrollTo = sectionId => {
+        const body = document.querySelector('.body-container');
+        const section = body.querySelector(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+
     render = () => {
         return (
             <Page>
@@ -30,35 +36,56 @@ export default class extends React.Component {
                             </div>
                         </Col>
                     </Row>
+                    <div style={{ height: '4rem' }}></div>
+                    <div className='d-none d-md-block' style={{ height: '3rem' }}></div>
+                    <div className='text-center text-white' style={{ marginTop: '4rem' }}><i onClick={() => this.scrollTo('#row-1')} className='fas fa-chevron-down next-section-btn'></i></div>
                 </div>
-                
-                <ProjectRow index={1} transitionDirection='left' bgColor='#FFFFFF' color='#5638A9' imgOrder={1} contentOrder={2} title={'YelpCamp'} 
-                img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
-                content={[
-                    'An interactive and responsive website that allows users to create a profile, add campgrounds or view campgrounds added by others and also interact with them by posting comments and reviews.',
-                    'The UI of this project has been developed using HTML, CSS, JavaScript and back-end has been done using NodeJS, Express and MongoDB.',
-                    ''
-                ]} />
-                
-                <ProjectRow index={2} transitionDirection='right' bgColor='#5638A9' color='#FFFFFF' imgOrder={2} contentOrder={1} title={'YelpCamp'} 
-                img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
-                content={['tales better twice poem somehow never leaving forgotten pattern observe chicken neck shine silence folks eaten keep strip class clock run list scared globe', 'chapter opportunity difficulty note care believed team friend friendly cutting kitchen driver additional settlers blow gulf mostly eventually rock toy rate hide jet sand', 'tax picture tales nuts under had uncle source noted drawn heading rough me beneath stiff degree palace addition took major colony fellow moving of']} />
-                
-                <ProjectRow index={3} transitionDirection='left' bgColor='#FFFFFF' color='#5638A9' imgOrder={1} contentOrder={2} title={'YelpCamp'} 
-                img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
-                content={['needed thank yourself calm scared donkey noted alone simple horse heat surrounded sink wind hope worker place scientific winter kitchen thin agree connected possibly', 'nose printed thrown would mile youth aside arrow battle sudden able necessary create beneath thing sum school hidden huge forget electricity as dull gun', 'possibly few happen religious pack slowly great truck shore laid studying hunter excited doll planned another shout author rise unusual red stomach roar dry']} />
-                
-                <ProjectRow index={4} transitionDirection='right' bgColor='#5638A9' color='#FFFFFF' imgOrder={2} contentOrder={1} title={'YelpCamp'} 
-                img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
-                content={['general arm seems sharp such gone ate baby distant rice please bigger length suggest price doctor sense monkey grandfather dried equal temperature cross mathematics', 'giving slave excitement triangle begun damage studying thank brick them sign nervous full music gate now ear quiet grow syllable neighborhood page arrow bend', 'car drew zoo sure apartment share stopped city wood changing lesson master mission win golden system point shallow hide deer cup hearing medicine finish']} />
-                
-                <ProjectRow index={5} transitionDirection='left' bgColor='#FFFFFF' color='#5638A9' imgOrder={1} contentOrder={2} title={'YelpCamp'} 
-                img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
-                content={['belong parts four prove popular something wing facing run next topic diagram purpose review toward search develop brass cave policeman breakfast news inside gradually', 'air plastic else tail thou teeth beat helpful lose trail statement express knew gone making drop belt strike plan train available fact string willing', 'due dress they modern back affect making gulf cowboy anywhere cause entire larger wherever camera door product whatever wonderful announced instrument did trade industrial']} />
-                
-                <ProjectRow index={6} transitionDirection='right' bgColor='#5638A9' color='#FFFFFF' imgOrder={2} contentOrder={1} title={'YelpCamp'} 
-                img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
-                content={['shop discussion recall however several herd effort tropical why box student shall noise buy north doubt dig chance represent separate support certain time size', 'outline immediately thought red shape warm worker since right jar want mission weight brown whether aware border sheet bean plain outer using bottle find', 'tone pot flew opinion beneath dream pattern alphabet like tax driving earn dead mirror fort minute upper shade mice law teacher any finally late']} />
+
+                <ProjectRow scrollTo={this.scrollTo} index={1} transitionDirection='left' bgColor='#FFFFFF' color='#5e1f87' imgOrder={1} contentOrder={2} title={'YelpCamp'}
+                    img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
+                    content={[
+                        'An interactive and responsive website that allows users to create a profile, add campgrounds or view campgrounds added by others and also interact with them by posting comments and reviews.',
+                        'The UI of this project has been developed using HTML, CSS, JavaScript and back-end has been done using NodeJS, Express and MongoDB.',
+                    ]} />
+
+                <ProjectRow scrollTo={this.scrollTo} index={2} transitionDirection='right' bgColor='#5e1f87' color='#FFFFFF' imgOrder={2} contentOrder={1} title={'Insta-Follower'}
+                    img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
+                    content={[
+                        'An automated script to find out the list of Instagram accounts that are not following back a user.',
+                        'The web browser automation is achieved using Python and Selenium framework.',
+                        'This script is really useful for the Instagram addicts who are obsessed with their profiles and followers!'
+                    ]} />
+
+                <ProjectRow scrollTo={this.scrollTo} index={3} transitionDirection='left' bgColor='#FFFFFF' color='#2d7a6d' imgOrder={1} contentOrder={2} title={'SplashMyWall'}
+                    img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
+                    content={[
+                        'A script which allows users to choose a folder and create a slideshow of desktop wallpapers out of the images contained in the specified folder.',
+                        'The user can also choose to get new high-resolution images of desired category from Unsplash and get a slideshow made from them within seconds.',
+                        'This script has been developed using Python and Unsplash API.'
+                    ]} />
+
+                <ProjectRow scrollTo={this.scrollTo} index={4} transitionDirection='right' bgColor='#2d7a6d' color='#FFFFFF' imgOrder={2} contentOrder={1} title={'Daily News'}
+                    img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
+                    content={[
+                        'A responsive website which fetches latest news headlines for various categories and keeps you up-to-date on-the-go!',
+                        'The front-end of this application has been developed using HTML, CSS and JavaScript and the back-end has been done using NodeJS, Express and MongoDB.'
+                    ]} />
+
+                <ProjectRow scrollTo={this.scrollTo} index={5} transitionDirection='left' bgColor='#FFFFFF' color='#7a173a' imgOrder={1} contentOrder={2} title={'HangMan'}
+                    img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
+                    content={[
+                        'A console based game which allows users to guess alphabets in order to identify a random word.',
+                        'It is a fun way to enhance your vocabulary as meaning of the word is scrapped from Dictionary.com when user is able to correctly guess the word, and the word bank increases everyday when the game is run.',
+                        'This application has been developed using Python and BeautifulSoup library.'
+                    ]} />
+
+                <ProjectRow index={6} transitionDirection='right' bgColor='#7a173a' color='#FFFFFF' imgOrder={2} contentOrder={1} title={'Color-picker'}
+                    img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
+                    content={[
+                        'An app which lets you choose different colors and their shades from various color palettes.',
+                        'User can also create new palettes by choosing unique colors and rearranging them as per their liking.',
+                        'The technologies used in making this project are JavaScript, ReactJS and Material UI.'
+                    ]} />
 
             </Page>
         );
