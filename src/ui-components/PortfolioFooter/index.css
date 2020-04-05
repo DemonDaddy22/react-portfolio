@@ -1,13 +1,11 @@
 .footer-container {
     width: 100%;
     min-height: 180px;
-    background-color: rgb(28, 20, 48);
     display: flex;
     flex-direction: row;
 }
 
 .footer-navigate {
-    background-color: #acffe3;
     width: 80px;
     display: flex;
     flex-direction: column;
@@ -18,7 +16,6 @@
 .navigate-top {
     cursor: pointer;
     font-size: 2rem;
-    color: rgb(28, 20, 48);
     opacity: 0.95;
     transition: all ease 0.3s;
 }
@@ -66,7 +63,6 @@
 
 .footer-email a {
     text-decoration: none;
-    color: #acffe3;
     font-size: 1rem;
 }
 

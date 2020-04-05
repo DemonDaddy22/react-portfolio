@@ -17,8 +17,8 @@ export default class PortfolioFooter extends React.Component {
     render = () => {
         return (
             <div style={{backgroundColor: this.props.bgColor}} className='footer-container'>
-                <div className='footer-navigate'>
-                    <i onClick={() => this.scrollTo()} style={{color: this.props.color}} className="fas fa-arrow-alt-circle-up navigate-top"></i>
+                <div style={{backgroundColor: this.props.color}} className='footer-navigate'>
+                    <i onClick={() => this.scrollTo()} style={{color: this.props.bgColor}} className="fas fa-arrow-alt-circle-up navigate-top"></i>
                 </div>
                 <div className='footer-content'>
                     <div className='container' style={{height: '100%'}}>

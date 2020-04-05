@@ -122,7 +122,7 @@ export default class Home extends React.Component {
                         <Col sm={12} md={6}><PortfolioGalleryCarousel interval={3500} /></Col>
                     </Row>
                 </Container>
-                <PortfolioFooter />
+                <PortfolioFooter bgColor='#1c1430' color='#acffe3' />
             </Page>
         )
     }
