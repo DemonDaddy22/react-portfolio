@@ -5,10 +5,10 @@ import './index.css';
 
 export default class PortfolioNavbar extends React.Component {
 
-    scrollTo = () => {
+    scrollTo = sectionId => {
         const body = document.querySelector('.body-container');
-        const about = body.querySelector('#about-section');
-        about.scrollIntoView({ behavior: 'smooth' });
+        const section = body.querySelector(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
     }
 
     handleUrlClick = url => e => {
@@ -19,12 +19,12 @@ export default class PortfolioNavbar extends React.Component {
     render = () => {
         return (
             <Navbar className='pd-5' expand='md' variant={this.props.variant}>
-                <Navbar.Brand className='nav-title ml-2' href='/'>Shades of Demon</Navbar.Brand>
                 <Navbar.Toggle aria-controls='basic-navbar-nav' />
-                <Navbar.Collapse id='basic-navbar-nav' className='ml-auto' style={{ flexGrow: 'inherit' }}>
-                    <Nav style={{ alignItems: 'flex-end' }}>
+                <Navbar.Collapse id='basic-navbar-nav'>
+                    <Navbar.Brand style={{flex: 1}} className='nav-title ml-2' href='/'>Shades of Demon</Navbar.Brand>
+                    <Nav>
                         {this.props.page === 'home' &&
-                            <div className={`${this.props.linkColor} navbar-item smoothscroll`} onClick={() => this.scrollTo()} >
+                            <div className={`${this.props.linkColor} navbar-item smoothscroll`} onClick={() => this.scrollTo('#about-section')} >
                                 About
                             </div>}
                         <div className={`${this.props.linkColor} navbar-item`} onClick={this.handleUrlClick('/projects')}>Projects</div>
