@@ -62,7 +62,7 @@ export default class Home extends React.Component {
                                     <img src='https://avatars0.githubusercontent.com/u/39908472?s=460&u=6cadc55e69b86a26c14ae501013b033379824d6c&v=4'
                                         height='300' width='300' alt='about-img' className='about-img' />
                                 </Col>
-                                <Col sm={12} md={6} lg={7} className='text-justify text-theme'>
+                                <Col sm={12} md={6} lg={7} className='text-theme'>
                                     I'm currently pursuing B.Tech. in Computer Engineering from Thapar Institute of Engineering and Technology, Patiala and
                                     at the same time working as an SDE Intern in OYO Rooms, Gurugram.<br /><br />
                                     Over the past couple of years, I have acquired various skills which include Full Stack Web-Development, Python Scripting,
