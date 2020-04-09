@@ -34,7 +34,7 @@ export default class Gallery extends React.Component {
                                 <div className='display-4 font-weight-bold text-shadow-light outline-black'>GALLERY</div>
                                 <div className='mt-5'>
                                     Photography for me is like capturing and saving the moments which are otherwise lost forever. 
-                                    I hope you enjoy the pictures I clicked over time. For more images and inspiration, visit my <span className='inline-link-gallery' onClick={this.handleUrlClick('https://www.instagram.com/shades_of_demon/')}>Instagram profile</span>.
+                                    Interact with the images and see the magic! For more images and inspiration, visit my <span className='inline-link-gallery' onClick={this.handleUrlClick('https://www.instagram.com/shades_of_demon/')}>Instagram profile</span>.
                                 </div>
                             </Fade>
                         </Col>

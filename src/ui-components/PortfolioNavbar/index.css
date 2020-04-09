@@ -21,13 +21,15 @@
 }
 
 .navbar-item {
-    margin-left: auto;
     margin-left: 20px;
     font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.4px;
+    transition: all ease 0.4s;
 }
 
 .navbar-nav .navbar-item:hover {
     cursor: pointer;
     color: rgba(167, 226, 250, 0.8) !important;
-    transition: all ease 0.4s;
+    transform: scale(1.05);
 }

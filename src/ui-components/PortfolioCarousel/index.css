@@ -1,0 +1,11 @@
+.portfolio-carousel-image {
+    max-height: 700px;
+    min-height: 280px;
+}
+
+.carousel {
+    max-width: 94%;
+    max-height: 700px;
+    min-height: 280px;
+    margin: 0 auto;
+}

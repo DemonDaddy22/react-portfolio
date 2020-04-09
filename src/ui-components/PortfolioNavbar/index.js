@@ -24,7 +24,7 @@ export default class PortfolioNavbar extends React.Component {
                     <Navbar.Brand className='nav-title ml-2' href='/'>Shades of Demon</Navbar.Brand>
                     <Nav className='ml-auto'>
                         {this.props.page === 'home' &&
-                            <div className={`${this.props.linkColor} navbar-item smoothscroll`} onClick={() => this.scrollTo('#about-section')} >
+                            <div className={`${this.props.linkColor} navbar-item`} onClick={() => this.scrollTo('#about-section')} >
                                 About
                             </div>}
                         <div className={`${this.props.linkColor} navbar-item`} onClick={this.handleUrlClick('/projects')}>Projects</div>
