@@ -1,7 +1,9 @@
 .body-container {
     scroll-behavior: smooth;
     border-radius: 6px;
-    background-color: #fff;
+    background: url(../../images/portfolio-bg.svg);
+    background-position: center;
+    background-size: cover;
     overflow-x: hidden;
     overflow-y: scroll;
     z-index: 10;
