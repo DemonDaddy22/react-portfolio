@@ -11,9 +11,9 @@ import PortfolioFooter from '../../../ui-components/PortfolioFooter';
 
 export default class Home extends React.Component {
 
-    handleUrlClick = url => e => {
+    handleUrlClick = (url, type = '_blank') => e => {
         e.stopPropagation();
-        window.open(url);
+        window.open(url, type);
     }
 
     render = () => {
@@ -78,8 +78,8 @@ export default class Home extends React.Component {
                 <div className='projects-header'>
                     <Container>
                         <Row style={{ padding: '80px 0' }}>
-                            <Col sm={12} md={5} className='projects-header-title h2 text-shadow-light outline-black'>
-                                <Fade left>Projects</Fade>
+                            <Col sm={12} md={5} className='projects-header-title text-shadow-light'>
+                                <Fade left><div onClick={this.handleUrlClick('/projects', '_self')} className='styled-button mx-auto'>Projects</div></Fade>
                             </Col>
                             <Col md={1} ><div className='divider'></div></Col>
                             <Col sm={12} md={6} className='blockquote'>
@@ -98,8 +98,8 @@ export default class Home extends React.Component {
                 <div className='gallery-header'>
                     <Container>
                         <Row style={{ padding: '80px 0' }}>
-                            <Col sm={12} md={5} className='gallery-header-title h2 text-shadow-light outline-black'>
-                                <Fade left>Gallery</Fade>
+                            <Col sm={12} md={5} className='gallery-header-title text-shadow-light'>
+                                <Fade left><div onClick={this.handleUrlClick('/gallery', '_self')} className='styled-button mx-auto'>Gallery</div></Fade>
                             </Col>
                             <Col md={1} ><div className='divider'></div></Col>
                             <Col sm={12} md={6} className='blockquote'>

@@ -22,7 +22,7 @@ export default class PortfolioCarousel extends React.Component {
                     />
                     <Carousel.Caption className='text-white'>
                         <h3>YelpCamp</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <p>Come explore the sublime campgrounds present across the world!</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -34,7 +34,7 @@ export default class PortfolioCarousel extends React.Component {
 
                     <Carousel.Caption className='text-dark'>
                         <h3>Insta-Follower</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>It's the quality that matters and not the quantity!</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -46,9 +46,7 @@ export default class PortfolioCarousel extends React.Component {
 
                     <Carousel.Caption className='text-white'>
                         <h3>SplashMyWall</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
+                        <p>Create joy with each picture!</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -59,7 +57,7 @@ export default class PortfolioCarousel extends React.Component {
                     />
                     <Carousel.Caption className='text-white'>
                         <h3>Daily News</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <p>Be the news junkie in your neighbourhood!</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -71,7 +69,7 @@ export default class PortfolioCarousel extends React.Component {
 
                     <Carousel.Caption className='text-white'>
                         <h3>HangMan</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>What we learn with pleasure, we never forget!</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -83,9 +81,7 @@ export default class PortfolioCarousel extends React.Component {
 
                     <Carousel.Caption className='text-white'>
                         <h3>Color-picker</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
+                        <p>Step into the colorful world of colors!</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

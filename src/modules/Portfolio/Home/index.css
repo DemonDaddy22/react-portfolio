@@ -147,57 +147,44 @@
     margin: 0;
 }
 
-/* .projects-carousel {
-    margin: 160px 16px;
-    padding: 0;
-    border-radius: 225px 75px 205px 75px/75px 205px 75px 225px;
-    border: 12px solid #E6BE8A;
-    animation-name: borderColor;
-    animation-duration: 20s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: borderColor;
-    -webkit-animation-duration: 20s;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-name: borderColor;
-    -moz-animation-duration: 20s;
-    -moz-animation-timing-function: ease;
-    -moz-animation-iteration-count: infinite;
+.styled-button {
+    padding: 20px 10px;
+    width: 80%;
+    background: none;
+    border: none;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
 }
 
-@keyframes borderColor {
-    0% {
-        border-color: #6cee6e;
-    }
-    10% {
-        border-color: #f3f190;
-    }
-    20% {
-        border-color: #ee8a6c;
-    }
-    30% {
-        border-color: #ee6cbc;
-    }
-    40% {
-        border-color: #af6cee;
-    }
-    50% {
-        border-color: #6cdaee;
-    }
-    60% {
-        border-color: #af6cee;
-    }
-    70% {
-        border-color: #ee6cbc;
-    }
-    80% {
-        border-color: #ee8a6c;
-    }
-    90% {
-        border-color: #f3f190;
-    }
-    100% {
-        border-color: #6cee6e;
-    }
-} */
+.styled-button:after, .styled-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid #FFFFFF;
+    -webkit-transition: -webkit-transform 0.25s, background-color 0.25s;
+    transition: -webkit-transform 0.25s, background-color 0.25s;
+    transition: transform 0.25s, background-color 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s, background-color 0.25s;
+}
+
+.styled-button:after {
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px);
+}
+
+.styled-button:before {
+    -webkit-transform: translate(-4px, -4px);
+    transform: translate(-4px, -4px);
+}
+
+.styled-button:hover:after, .styled-button:hover:before {
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-transform: translate(0);
+    transform: translate(0);
+}
