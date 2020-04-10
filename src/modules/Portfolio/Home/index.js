@@ -50,7 +50,8 @@ export default class Home extends React.Component {
                         <Col md={2} />
                     </Row>
                 </div>
-                <Container>
+                {/* adjust the padding and margin of abou */}
+                <Container style={{minHeight: '100vh'}}>
                     <div id='about-section'>
                         <Fade bottom>
                             <div className='h2 text-theme font-weight-bold text-shadow-light text-center'>Bit About Me</div>
@@ -113,11 +114,11 @@ export default class Home extends React.Component {
                     </Container>
                 </div>
                 <Container className='gallery'>
-                    <Row style={{ marginTop: 100 }}>
+                    <Row style={{ marginTop: 80 }}>
                         <Col sm={12} md={6}><PortfolioGalleryCarousel interval={4000} /></Col>
                         <Col sm={12} md={6}><PortfolioGalleryCarousel interval={4600} /></Col>
                     </Row>
-                    <Row style={{ marginBottom: 100 }}>
+                    <Row style={{ marginBottom: 80 }}>
                         <Col sm={12} md={6}><PortfolioGalleryCarousel interval={5000} /></Col>
                         <Col sm={12} md={6}><PortfolioGalleryCarousel interval={3500} /></Col>
                     </Row>

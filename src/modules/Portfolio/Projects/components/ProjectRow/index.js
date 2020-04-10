@@ -34,6 +34,7 @@ export default class ProjectRow extends React.Component {
                         </div>
                     </Row>
                 </Container>
+                <div className='d-none d-md-block' style={{ height: '3rem' }}></div>
                 {this.props.index !== 6 && <div className='text-center'><i onClick={() => this.props.scrollTo(`#row-${this.props.index + 1}`)} className='fas fa-chevron-down next-section-btn'></i></div>}
             </div>
         );
