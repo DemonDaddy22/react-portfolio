@@ -31,19 +31,19 @@ export default class Home extends React.Component {
                             </Fade>
                             <div className='bio-logos'>
                                 <Fade bottom delay={1000}>
-                                    <div className='logo' onClick={this.handleUrlClick('https://github.com/DemonDaddy22/')}><i className="fab fa-github mx-2"></i></div>
+                                    <div onClick={this.handleUrlClick('https://github.com/DemonDaddy22/')}><i className="logo logo-1 fab fa-github mx-2"></i></div>
                                 </Fade>
                                 <Fade bottom delay={1200}>
-                                    <div className='logo' onClick={this.handleUrlClick('https://www.linkedin.com/in/rohangupta22/')}><i class="fab fa-linkedin-in mx-2"></i></div>
+                                    <div onClick={this.handleUrlClick('https://www.linkedin.com/in/rohangupta22/')}><i className="logo logo-2 fab fa-linkedin-in mx-2"></i></div>
                                 </Fade>
                                 <Fade bottom delay={1400}>
-                                    <div className='logo' onClick={this.handleUrlClick('https://twitter.com/Showstopper_RG')}><i class="fab fa-twitter mx-2"></i></div>
+                                    <div onClick={this.handleUrlClick('https://twitter.com/Showstopper_RG')}><i className="logo logo-3 fab fa-twitter mx-2"></i></div>
                                 </Fade>
                                 <Fade bottom delay={1600}>
-                                    <div className='logo' onClick={this.handleUrlClick('https://www.instagram.com/rg_rohan1/')}><i className="fab fa-instagram mx-2"></i></div>
+                                    <div onClick={this.handleUrlClick('https://www.instagram.com/rg_rohan1/')}><i className="logo logo-4 fab fa-instagram mx-2"></i></div>
                                 </Fade>
                                 <Fade bottom delay={1800}>
-                                    <div className='logo' onClick={this.handleUrlClick('https://www.facebook.com/demondaddy22')}><i className="fab fa-facebook-f mx-2"></i></div>
+                                    <div onClick={this.handleUrlClick('https://www.facebook.com/demondaddy22')}><i className="logo logo-5 fab fa-facebook-f mx-2"></i></div>
                                 </Fade>
                             </div>
                         </Col>

@@ -26,3 +26,7 @@
     cursor: pointer;
     transition: all ease 0.4s;
 }
+
+.project-content li {
+    margin-bottom: 16px;
+}

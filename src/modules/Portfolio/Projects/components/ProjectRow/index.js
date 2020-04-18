@@ -18,7 +18,7 @@ export default class ProjectRow extends React.Component {
                         </div>
                         <div className={`col-sm-12 col-md-7 text-center order-1 order-md-${this.props.contentOrder}`}>
                             <Row className='justify-content-center'>
-                                <div className='col-12 px-0'>
+                                <div className='col-12 col-md-11 px-0'>
                                     <Fade left={this.props.contentOrder === 1 ? true : false} right={this.props.contentOrder === 2 ? true : false}>
                                         <div className='project-title mt-2 my-4'>{this.props.title}</div>
                                         <ul className='project-content text-left'>
