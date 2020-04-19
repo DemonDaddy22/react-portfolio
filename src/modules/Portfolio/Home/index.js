@@ -52,8 +52,7 @@ export default class Home extends React.Component {
                         <Col md={2} />
                     </Row>
                 </div>
-                {/* adjust the padding and margin of abou */}
-                <Container style={{minHeight: '100vh'}}>
+                <Container style={{ minHeight: '100vh' }}>
                     <div id='about-section'>
                         <Fade bottom>
                             <div className='h2 text-theme font-weight-bold text-shadow-light text-center'>Bit About Me</div>
@@ -117,12 +116,40 @@ export default class Home extends React.Component {
                 </div>
                 <Container className='gallery'>
                     <Row style={{ marginTop: 80 }}>
-                        <Col sm={12} md={6}><PortfolioGalleryCarousel interval={4000} /></Col>
-                        <Col sm={12} md={6}><PortfolioGalleryCarousel interval={4600} /></Col>
+                        <Col className='px-0 px-md-2' sm={12} md={6}>
+                            <PortfolioGalleryCarousel interval={4000}
+                                images={['/gallery3.jpeg',
+                                    '/gallery1.jpeg',
+                                    '/gallery10.jpeg',
+                                    '/gallery38.jpeg',
+                                    '/gallery58.jpeg']} />
+                        </Col>
+                        <Col className='px-0 px-md-2' sm={12} md={6}>
+                            <PortfolioGalleryCarousel interval={4600}
+                                images={['/gallery73.jpeg',
+                                    '/gallery69.jpeg',
+                                    '/gallery90.png',
+                                    '/gallery64.jpeg',
+                                    '/gallery78.jpeg']} />
+                        </Col>
                     </Row>
                     <Row style={{ marginBottom: 80 }}>
-                        <Col sm={12} md={6}><PortfolioGalleryCarousel interval={5000} /></Col>
-                        <Col sm={12} md={6}><PortfolioGalleryCarousel interval={3500} /></Col>
+                        <Col className='px-0 px-md-2' sm={12} md={6}>
+                            <PortfolioGalleryCarousel interval={5000}
+                                images={['/gallery70.jpeg',
+                                    '/gallery68.jpeg',
+                                    '/gallery74.jpeg',
+                                    '/gallery63.jpeg',
+                                    '/gallery53.jpeg']} />
+                        </Col>
+                        <Col className='px-0 px-md-2' sm={12} md={6}>
+                            <PortfolioGalleryCarousel interval={3500}
+                                images={['/gallery49.jpeg',
+                                    '/gallery39.jpeg',
+                                    '/gallery33.jpeg',
+                                    '/gallery42.jpeg',
+                                    '/gallery31.jpeg']} />
+                        </Col>
                     </Row>
                 </Container>
                 <PortfolioFooter bgColor='#1c1430' color='#acffe3' />

@@ -27,6 +27,10 @@
     transition: all ease 0.4s;
 }
 
+.project-row ul {
+    padding-inline-start: 16px !important;
+}
+
 .project-content li {
     margin-bottom: 16px;
 }

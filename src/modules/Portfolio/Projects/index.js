@@ -75,7 +75,7 @@ export default class extends React.Component {
                         'The front-end of this application has been developed using HTML, CSS and JavaScript and the back-end has been done using NodeJS, Express and MongoDB.'
                     ]} />
 
-                <ProjectRow scrollTo={this.scrollTo} index={5} bgColor={['#ffabc0', '#fff5f7']} color='#242424' imgOrder={1} contentOrder={2} title={'HangMan'}
+                <ProjectRow scrollTo={this.scrollTo} index={5} bgColor={['#ffabc0', '#fff2f5']} color='#242424' imgOrder={1} contentOrder={2} title={'HangMan'}
                     img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
                     content={[
                         'A console based game which allows users to guess alphabets in order to identify a random word.',
@@ -83,7 +83,7 @@ export default class extends React.Component {
                         'This application has been developed using Python and BeautifulSoup library.'
                     ]} />
 
-                <ProjectRow index={6} bgColor={['#fff5f7', '#ffabc0']} color='#242424' imgOrder={2} contentOrder={1} title={'Color-picker'}
+                <ProjectRow index={6} bgColor={['#fff2f5', '#ffabc0']} color='#242424' imgOrder={2} contentOrder={1} title={'Color-picker'}
                     img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
                     content={[
                         'An app which lets you choose different colors and their shades from various color palettes.',
