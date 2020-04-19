@@ -1,5 +1,5 @@
 .navbar-bg {
-    background: url('../../../images/gallery100@2x.png');
+    background: url('https://res.cloudinary.com/yelp-camp/image/upload/v1587313984/portfolio/gallery100_2x.png');
     width: 100%;
     min-height: 100%;
     background-color: #212121;
@@ -89,6 +89,8 @@
 }
 
 .about-img {
+    width: 300px !important;
+    height: 300px !important;
     display: block;
     border-radius: 50%;
     margin: 0 auto;

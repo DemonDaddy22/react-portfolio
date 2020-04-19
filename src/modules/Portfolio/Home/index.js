@@ -61,8 +61,8 @@ export default class Home extends React.Component {
                         <Fade bottom>
                             <Row style={{ marginTop: 84 }}>
                                 <Col sm={12} md={6} lg={4} style={{ marginBottom: 84 }}>
-                                    <img src='https://avatars0.githubusercontent.com/u/39908472?s=460&u=6cadc55e69b86a26c14ae501013b033379824d6c&v=4'
-                                        height='300' width='300' alt='about-img' className='about-img' />
+                                    <img src='https://avatars0.githubusercontent.com/u/39908472?s=460&u=d02d57cf1b01e6571a27aa2f5085a0e4b01d1dfe&v=4'
+                                        alt='about-img' className='about-img' />
                                 </Col>
                                 <Col sm={12} md={6} lg={7} className='text-theme'>
                                     I'm currently pursuing B.Tech. in Computer Engineering from Thapar Institute of Engineering and Technology, Patiala and
