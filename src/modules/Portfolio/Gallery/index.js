@@ -73,7 +73,7 @@ export default class Gallery extends React.Component {
                             'https://res.cloudinary.com/yelp-camp/image/upload/v1587303142/portfolio/gallery44.jpg',
                             'https://res.cloudinary.com/yelp-camp/image/upload/v1587303141/portfolio/gallery29.jpg',
                             'https://res.cloudinary.com/yelp-camp/image/upload/v1587303141/portfolio/gallery30.jpg',
-                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303140/portfolio/gallery26.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587315984/portfolio/gallery101.jpg',
                             'https://res.cloudinary.com/yelp-camp/image/upload/v1587303140/portfolio/gallery23.jpg',
                             'https://res.cloudinary.com/yelp-camp/image/upload/v1587303139/portfolio/gallery17.jpg'
                         ]} />
