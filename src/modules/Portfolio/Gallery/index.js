@@ -46,44 +46,44 @@ export default class Gallery extends React.Component {
                 <div id='gallery' className='gallery-container'>
                     <Container>
                         <ImagesRow rowIndex={0} images={[
-                            '/gallery93.png',
-                            '/gallery24.jpeg',
-                            '/gallery7.jpeg',
-                            '/gallery76.jpeg',
-                            '/gallery81.jpeg',
-                            '/gallery94.png'
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303724/portfolio/gallery93.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303140/portfolio/gallery24.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303138/portfolio/gallery7.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303145/portfolio/gallery76.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303146/portfolio/gallery81.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303148/portfolio/gallery94.png'
                         ]} style={{height: 250}} />
                         <ImagesRow rowIndex={1} images={[
-                            '/gallery91.png',
-                            '/gallery77.jpeg',
-                            '/gallery85.png',
-                            '/gallery80.jpeg',
-                            '/gallery75.jpeg',
-                            '/gallery71.jpeg'
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303149/portfolio/gallery91.png',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303145/portfolio/gallery77.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303724/portfolio/gallery85.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303146/portfolio/gallery80.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303145/portfolio/gallery75.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303145/portfolio/gallery71.jpg'
                         ]} />
                         <ImagesRow rowIndex={2} images={[
-                            '/gallery67.jpeg',
-                            '/gallery65.jpeg',
-                            '/gallery60.jpeg',
-                            '/gallery55.jpeg',
-                            '/gallery48.jpeg',
-                            '/gallery46.jpeg'
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303143/portfolio/gallery67.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303143/portfolio/gallery65.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303143/portfolio/gallery60.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303142/portfolio/gallery55.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303141/portfolio/gallery48.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303142/portfolio/gallery46.jpg'
                         ]} />
                         <ImagesRow rowIndex={3} images={[
-                            '/gallery44.jpeg',
-                            '/gallery29.jpeg',
-                            '/gallery30.jpeg',
-                            '/gallery26.jpeg',
-                            '/gallery23.jpeg',
-                            '/gallery17.jpeg'
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303142/portfolio/gallery44.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303141/portfolio/gallery29.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303141/portfolio/gallery30.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303140/portfolio/gallery26.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303140/portfolio/gallery23.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303139/portfolio/gallery17.jpg'
                         ]} />
                         <ImagesRow rowIndex={4} images={[
-                            '/gallery15.jpeg',
-                            '/gallery16.jpeg',
-                            '/gallery11.jpeg',
-                            '/gallery9.jpeg',
-                            '/gallery5.jpeg',
-                            '/gallery6.jpeg'
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303139/portfolio/gallery15.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303138/portfolio/gallery16.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303139/portfolio/gallery11.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303139/portfolio/gallery9.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303138/portfolio/gallery5.jpg',
+                            'https://res.cloudinary.com/yelp-camp/image/upload/v1587303138/portfolio/gallery6.jpg'
                         ]} />
                     </Container>
                 </div>
