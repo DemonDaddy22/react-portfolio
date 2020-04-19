@@ -46,14 +46,14 @@ export default class extends React.Component {
                 </div>
 
                 <ProjectRow scrollTo={this.scrollTo} index={1} bgColor={['#baa3ff', '#f2edff']} color='#242424' imgOrder={1} contentOrder={2} title={'YelpCamp'}
-                    img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
+                    img='https://images.unsplash.com/photo-1533518509997-eddedc7f704e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80'
                     content={[
                         'An interactive and responsive website that allows users to create a profile, add campgrounds or view campgrounds added by others and also interact with them by posting comments and reviews.',
                         'The UI of this project has been developed using HTML, CSS, JavaScript and back-end has been done using NodeJS, Express and MongoDB.',
                     ]} />
 
                 <ProjectRow scrollTo={this.scrollTo} index={2} bgColor={['#f2edff', '#baa3ff']} color='#242424' imgOrder={2} contentOrder={1} title={'Insta-Follower'}
-                    img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
+                    img='https://images.unsplash.com/photo-1539820156190-faf186a57d94?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80'
                     content={[
                         'An automated script to find out the list of Instagram accounts that are not following back a user.',
                         'The web browser automation is achieved using Python and Selenium framework.',
@@ -61,7 +61,7 @@ export default class extends React.Component {
                     ]} />
 
                 <ProjectRow scrollTo={this.scrollTo} index={3} bgColor={['#a3ffdd', '#f0fff9']} color='#242424' imgOrder={1} contentOrder={2} title={'SplashMyWall'}
-                    img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
+                    img='https://images.unsplash.com/photo-1503410759647-41040b696833?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80'
                     content={[
                         'A script which allows users to choose a folder and create a slideshow of desktop wallpapers out of the images contained in the specified folder.',
                         'The user can also choose to get new high-resolution images of desired category from Unsplash and get a slideshow made from them within seconds.',
@@ -69,14 +69,14 @@ export default class extends React.Component {
                     ]} />
 
                 <ProjectRow scrollTo={this.scrollTo} index={4} bgColor={['#f0fff9', '#a3ffdd']} color='#242424' imgOrder={2} contentOrder={1} title={'Daily News'}
-                    img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
+                    img='https://images.unsplash.com/photo-1521716250348-c4ae4ff1df43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2964&q=80'
                     content={[
                         'A responsive website which fetches latest news headlines for various categories and keeps you up-to-date on-the-go!',
                         'The front-end of this application has been developed using HTML, CSS and JavaScript and the back-end has been done using NodeJS, Express and MongoDB.'
                     ]} />
 
                 <ProjectRow scrollTo={this.scrollTo} index={5} bgColor={['#ffabc0', '#fff2f5']} color='#242424' imgOrder={1} contentOrder={2} title={'HangMan'}
-                    img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
+                    img='https://images.unsplash.com/photo-1546098073-be73daa1d8ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2775&q=80'
                     content={[
                         'A console based game which allows users to guess alphabets in order to identify a random word.',
                         'It is a fun way to enhance your vocabulary as meaning of the word is scrapped from Dictionary.com when user is able to correctly guess the word, and the word bank increases everyday when the game is run.',
@@ -84,7 +84,7 @@ export default class extends React.Component {
                     ]} />
 
                 <ProjectRow index={6} bgColor={['#fff2f5', '#ffabc0']} color='#242424' imgOrder={2} contentOrder={1} title={'Color-picker'}
-                    img='https://images.unsplash.com/photo-1492648272180-61e45a8d98a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'
+                    img='https://images.unsplash.com/photo-1466690672306-5f92132f7248?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80'
                     content={[
                         'An app which lets you choose different colors and their shades from various color palettes.',
                         'User can also create new palettes by choosing unique colors and rearranging them as per their liking.',
