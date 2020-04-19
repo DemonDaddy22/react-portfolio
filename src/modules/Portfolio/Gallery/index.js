@@ -46,7 +46,7 @@ export default class Gallery extends React.Component {
                 <div id='gallery' className='gallery-container'>
                     <Container>
                         <ImagesRow rowIndex={0} images={[
-                            '/gallery8.jpeg',
+                            '/gallery93.png',
                             '/gallery24.jpeg',
                             '/gallery7.jpeg',
                             '/gallery76.jpeg',
@@ -54,36 +54,36 @@ export default class Gallery extends React.Component {
                             '/gallery94.png'
                         ]} style={{height: 250}} />
                         <ImagesRow rowIndex={1} images={[
-                            '/gallery1.jpeg',
-                            '/gallery10.jpeg',
-                            '/gallery20.jpeg',
-                            '/gallery1.jpeg',
-                            '/gallery10.jpeg',
-                            '/gallery20.jpeg'
+                            '/gallery91.png',
+                            '/gallery77.jpeg',
+                            '/gallery85.png',
+                            '/gallery80.jpeg',
+                            '/gallery75.jpeg',
+                            '/gallery71.jpeg'
                         ]} />
                         <ImagesRow rowIndex={2} images={[
-                            '/gallery1.jpeg',
-                            '/gallery10.jpeg',
-                            '/gallery20.jpeg',
-                            '/gallery1.jpeg',
-                            '/gallery10.jpeg',
-                            '/gallery20.jpeg'
+                            '/gallery67.jpeg',
+                            '/gallery65.jpeg',
+                            '/gallery60.jpeg',
+                            '/gallery55.jpeg',
+                            '/gallery48.jpeg',
+                            '/gallery46.jpeg'
                         ]} />
                         <ImagesRow rowIndex={3} images={[
-                            '/gallery1.jpeg',
-                            '/gallery10.jpeg',
-                            '/gallery20.jpeg',
-                            '/gallery1.jpeg',
-                            '/gallery10.jpeg',
-                            '/gallery20.jpeg'
+                            '/gallery44.jpeg',
+                            '/gallery29.jpeg',
+                            '/gallery30.jpeg',
+                            '/gallery26.jpeg',
+                            '/gallery23.jpeg',
+                            '/gallery17.jpeg'
                         ]} />
                         <ImagesRow rowIndex={4} images={[
-                            '/gallery1.jpeg',
-                            '/gallery10.jpeg',
-                            '/gallery20.jpeg',
-                            '/gallery1.jpeg',
-                            '/gallery10.jpeg',
-                            '/gallery20.jpeg'
+                            '/gallery15.jpeg',
+                            '/gallery16.jpeg',
+                            '/gallery11.jpeg',
+                            '/gallery9.jpeg',
+                            '/gallery5.jpeg',
+                            '/gallery6.jpeg'
                         ]} />
                     </Container>
                 </div>
