@@ -8,7 +8,9 @@ export default class ProjectRow extends React.Component {
 
     render = () => {
         return (
-            <div id={`row-${this.props.index}`} style={{ backgroundColor: this.props.bgColor, color: this.props.color }} className='project-row'>
+            <div id={`row-${this.props.index}`} className='project-row'
+            style={{ backgroundImage: `linear-gradient(135deg, ${this.props.bgColor[0]} 0%, ${this.props.bgColor[0]} 50%, ${this.props.bgColor[1]} 50%, ${this.props.bgColor[1]} 100%)`,
+            color: this.props.color }}>
                 <Container>
                     <Row style={{ marginBottom: '6rem' }} className='align-items-center'>
                         <div className={`my-5 col-sm-12 col-md-5 order-2 order-md-${this.props.imgOrder}`}>
