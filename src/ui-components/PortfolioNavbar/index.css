@@ -1,23 +1,28 @@
+@font-face {
+    font-family: Clip;
+    src: url('https://acupoftee.github.io/fonts/Clip.ttf');
+}
+
 .nav-title {
-    letter-spacing: 0.4px;
-    font-weight: 700;
-    font-size: 2rem;
-    text-transform: uppercase;
-    display: inline !important;
-    position: relative;
-    color: rgba(167, 226, 250, 0.98) !important;
+    font-family: 'Clip';
+    color: #FB4264;
+    font-size: 2.5rem;
+    line-height: 2rem;
+    text-shadow: 0 0 0.5rem #F40A35;
+    animation: neon 3s ease infinite;
+    -moz-animation: neon 3s ease infinite;
+    -webkit-animation: neon 3s ease infinite;
 }
 
-.nav-title:hover {
-    color: rgb(193, 236, 253) !important;
-    transform: scale(1.05, 1.05);
-    transition: all ease 0.4s;
-}
-
-.nav-title::after {
-    content: 'Shades of Demon';
-    position: absolute; left: -4px; top: 7px;
-    color: rgba(144, 104, 240, 0.6);
+@keyframes neon {
+    0%, 100% {
+        text-shadow: 0 0 0.75rem #14e2e2, 0 0 0.9rem #14e2e2, 0 0 1.1rem #14e2e2, 0 0 1.1rem #14e2e2, 0 0 .5rem #dae9ff, .25rem .25rem .15rem #0c5041;
+        color: #f6ffff;
+    }
+    50% {
+        text-shadow: 0 0 .65rem #177074, 0 0 0.8rem #177074, 0 0 1.2rem #177074, 0 0 1.2rem #177074, 0 0 .2rem #177074, .25rem .25rem .15rem #0c5041;
+        color: #bfc9c7;
+    }
 }
 
 .navbar-item {

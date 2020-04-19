@@ -16,6 +16,8 @@ export default class Home extends React.Component {
         window.open(url, type);
     }
 
+    // add diagonal linear gradient to project row
+    // add images and test on windows
     render = () => {
         return (
             <Page>
