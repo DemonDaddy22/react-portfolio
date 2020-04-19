@@ -46,54 +46,44 @@ export default class Gallery extends React.Component {
                 <div id='gallery' className='gallery-container'>
                     <Container>
                         <ImagesRow rowIndex={0} images={[
-                            'https://images.unsplash.com/photo-1585240058938-871b99a43da1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1495420378468-78588a508652?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1533150783171-ce47d5c2b6ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
-                        ]} />
+                            '/gallery8.jpeg',
+                            '/gallery24.jpeg',
+                            '/gallery7.jpeg',
+                            '/gallery76.jpeg',
+                            '/gallery81.jpeg',
+                            '/gallery94.png'
+                        ]} style={{height: 250}} />
                         <ImagesRow rowIndex={1} images={[
-                            'https://images.unsplash.com/photo-1585240058938-871b99a43da1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1495420378468-78588a508652?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1533150783171-ce47d5c2b6ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
+                            '/gallery1.jpeg',
+                            '/gallery10.jpeg',
+                            '/gallery20.jpeg',
+                            '/gallery1.jpeg',
+                            '/gallery10.jpeg',
+                            '/gallery20.jpeg'
                         ]} />
                         <ImagesRow rowIndex={2} images={[
-                            'https://images.unsplash.com/photo-1585240058938-871b99a43da1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1495420378468-78588a508652?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1533150783171-ce47d5c2b6ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
+                            '/gallery1.jpeg',
+                            '/gallery10.jpeg',
+                            '/gallery20.jpeg',
+                            '/gallery1.jpeg',
+                            '/gallery10.jpeg',
+                            '/gallery20.jpeg'
                         ]} />
                         <ImagesRow rowIndex={3} images={[
-                            'https://images.unsplash.com/photo-1585240058938-871b99a43da1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1495420378468-78588a508652?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1533150783171-ce47d5c2b6ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
+                            '/gallery1.jpeg',
+                            '/gallery10.jpeg',
+                            '/gallery20.jpeg',
+                            '/gallery1.jpeg',
+                            '/gallery10.jpeg',
+                            '/gallery20.jpeg'
                         ]} />
                         <ImagesRow rowIndex={4} images={[
-                            'https://images.unsplash.com/photo-1585240058938-871b99a43da1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1495420378468-78588a508652?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1533150783171-ce47d5c2b6ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
-                        ]} />
-                        <ImagesRow rowIndex={5} images={[
-                            'https://images.unsplash.com/photo-1585240058938-871b99a43da1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1495420378468-78588a508652?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1533150783171-ce47d5c2b6ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
-                        ]} />
-                        <ImagesRow rowIndex={6} images={[
-                            'https://images.unsplash.com/photo-1585240058938-871b99a43da1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1495420378468-78588a508652?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1533150783171-ce47d5c2b6ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
-                        ]} />
-                        <ImagesRow rowIndex={7} images={[
-                            'https://images.unsplash.com/photo-1585240058938-871b99a43da1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1495420378468-78588a508652?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1533150783171-ce47d5c2b6ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
-                        ]} />
-                        <ImagesRow rowIndex={8} images={[
-                            'https://images.unsplash.com/photo-1585240058938-871b99a43da1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1495420378468-78588a508652?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1533150783171-ce47d5c2b6ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
-                        ]} />
-                        <ImagesRow rowIndex={9} images={[
-                            'https://images.unsplash.com/photo-1585240058938-871b99a43da1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1495420378468-78588a508652?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-                            'https://images.unsplash.com/photo-1533150783171-ce47d5c2b6ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
+                            '/gallery1.jpeg',
+                            '/gallery10.jpeg',
+                            '/gallery20.jpeg',
+                            '/gallery1.jpeg',
+                            '/gallery10.jpeg',
+                            '/gallery20.jpeg'
                         ]} />
                     </Container>
                 </div>

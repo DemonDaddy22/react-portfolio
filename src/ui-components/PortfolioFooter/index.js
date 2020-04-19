@@ -23,18 +23,18 @@ export default class PortfolioFooter extends React.Component {
                 <div className='footer-content'>
                     <div className='container' style={{height: '100%'}}>
                         <div className='row justify-content-end' style={{height: '100%'}}>
-                            <div className='col-sm-12 col-md-2 footer-col'>
+                            <div className='col-sm-12 col-lg-3 footer-col'>
                                 <div className='footer-brand'>shades of demon</div>
                                 <div className='footer-copyright'>&copy; <span style={{fontSize: 12}}>2020</span></div>
                             </div>
-                            <div className='col-md-5'></div>
-                            <div className='col-sm-12 col-md-3 footer-col'>
+                            <div className='col-lg-4'></div>
+                            <div className='col-sm-12 col-lg-3 footer-col'>
                                 <div className='footer-header'>Want to get in touch?</div>
                                 <div className='footer-email'>
                                     <a style={{color: this.props.color}} href='mailto:guptarohan1.rg@gmail.com'>guptarohan1.rg@gmail.com</a>
                                 </div>
                             </div>
-                            <div className='col-sm-12 col-md-2 footer-col'>
+                            <div className='col-sm-12 col-lg-2 footer-col'>
                                 <div className='footer-header'>
                                     <div className='logo footer-logo' onClick={this.handleUrlClick('https://github.com/DemonDaddy22/')}><i className="fab fa-github"></i></div>
                                     <div className='logo footer-logo' onClick={this.handleUrlClick('https://www.linkedin.com/in/rohangupta22/')}><i class="fab fa-linkedin-in"></i></div>
