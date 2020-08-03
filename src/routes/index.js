@@ -15,6 +15,8 @@ export default class Routes extends React.Component {
                 <Route exact path='/projects' component={Projects} />
 
                 <Route exact path='/gallery' component={Gallery} />
+
+                <Redirect to='/' from='*' />
             </Switch>
         );
     }
