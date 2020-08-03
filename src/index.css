@@ -1,22 +1,32 @@
 body {
 	position: relative;
-    margin: 0;
-    font-family: 'Roboto Mono', monospace;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: 'Roboto Mono', monospace;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 #background {
-    position: relative;
-    background-color: #FFFFFF;
-    height: 100vh;
+	position: relative;
+	background-color: #212121;
+	height: 100vh;
 	overflow: hidden;
 	width: 100vw;
 }
 
 #root {
 	position: absolute;
-	padding: 32px;
+	padding: 60px;
 	height: 100%;
 	width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	#root {
+		position: absolute;
+		padding: 32px;
+		height: 100%;
+		width: 100%;
+	}
 }
