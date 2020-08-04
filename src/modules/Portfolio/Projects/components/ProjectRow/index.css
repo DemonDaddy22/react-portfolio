@@ -19,13 +19,13 @@
 .next-section-btn {
     font-size: 2.5rem;
     opacity: 0.85;
+    transition: all ease 0.4s;
 }
 
 .next-section-btn:hover {
     opacity: 1;
     transform: scale(1.1);
     cursor: pointer;
-    transition: all ease 0.4s;
 }
 
 .project-row ul {

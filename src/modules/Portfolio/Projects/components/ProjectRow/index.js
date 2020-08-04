@@ -9,11 +9,13 @@ export default class ProjectRow extends React.Component {
     render = () => {
         return (
             <div id={`row-${this.props.index}`} className='project-row'
-            style={{ backgroundImage: `linear-gradient(135deg, ${this.props.bgColor[0]} 0%, ${this.props.bgColor[0]} 50%, ${this.props.bgColor[1]} 50%, ${this.props.bgColor[1]} 100%)`,
-            color: this.props.color }}>
+                style={{
+                    backgroundImage: `linear-gradient(135deg, ${this.props.bgColor[0]} 0%, ${this.props.bgColor[0]} 50%, ${this.props.bgColor[1]} 50%, ${this.props.bgColor[1]} 100%)`,
+                    color: this.props.color
+                }}>
                 <Container>
                     <Row style={{ marginBottom: '2rem' }} className='align-items-center'>
-                        <div className={`my-5 col-sm-12 col-md-5 order-2 order-md-${this.props.imgOrder}`}>
+                        <div className={`my-2 col-sm-12 col-md-5 order-2 order-md-${this.props.imgOrder}`}>
                             <Fade left={this.props.imgOrder === 1 ? true : false} right={this.props.imgOrder === 2 ? true : false}>
                                 <img src={this.props.img} alt={this.props.title.toLowerCase()} className='d-block mx-auto img-fluid project-img' />
                             </Fade>
@@ -36,8 +38,9 @@ export default class ProjectRow extends React.Component {
                         </div>
                     </Row>
                 </Container>
-                <div className='d-none d-md-block' style={{ height: '1rem' }}></div>
-                {this.props.index !== 6 && <div className='text-center'><i onClick={() => this.props.scrollTo(`#row-${this.props.index + 1}`)} className='fas fa-chevron-down next-section-btn'></i></div>}
+                {this.props.index !== 6 && <div className='text-center'>
+                    <i onClick={() => this.props.scrollTo(`#row-${this.props.index + 1}`)} className='fas fa-chevron-down next-section-btn'></i>
+                </div>}
             </div>
         );
     }
