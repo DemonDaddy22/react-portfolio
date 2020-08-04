@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Navbar, Nav } from 'react-bootstrap';
 import './index.css';
+import title from '../../images/title2.png';
 
 export default class PortfolioNavbar extends React.Component {
 
@@ -21,7 +22,9 @@ export default class PortfolioNavbar extends React.Component {
             <Navbar className='pd-5' expand='md' variant={this.props.variant}>
                 <Navbar.Toggle aria-controls='basic-navbar-nav' />
                 <Navbar.Collapse id='basic-navbar-nav'>
-                    <Navbar.Brand className='nav-title ml-2' href='/'>Shades of Demon</Navbar.Brand>
+                    <Navbar.Brand className='ml-2' href='/'>
+                        <img className='nav-title' src={title} alt='shades-of-demon-title' />
+                    </Navbar.Brand>
                     <Nav className='ml-auto'>
                         {this.props.page === 'home' &&
                             <div className={`${this.props.linkColor} navbar-item`} onClick={() => this.scrollTo('#about-section')} >

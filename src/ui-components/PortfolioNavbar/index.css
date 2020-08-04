@@ -1,28 +1,11 @@
-@font-face {
-    font-family: The Poster King;
-    src: url('../../assets/fonts/The\ Poster\ King.otf');
-}
-
 .nav-title {
-    font-family: 'The Poster King';
-    color: #d6f3f3;
-    font-size: 2.5rem;
-    line-height: 2rem;
-    text-shadow: 0 0 0.35rem #13292b;
-    animation: neon 3s ease infinite;
-    -moz-animation: neon 3s ease infinite;
-    -webkit-animation: neon 3s ease infinite;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
-@keyframes neon {
-    0%, 100% {
-        text-shadow: 0 0 0.75rem #14e2e2, 0 0 0.9rem #14e2e2, 0 0 1.1rem #14e2e2, 0 0 1.1rem #14e2e2, 0 0 .5rem #dae9ff, .25rem .25rem .15rem #0c5041;
-        color: #f6ffff;
-    }
-    50% {
-        text-shadow: 0 0 .65rem #177074, 0 0 0.8rem #177074, 0 0 1.2rem #177074, 0 0 1.2rem #177074, 0 0 .2rem #177074, .25rem .25rem .15rem #0c5041;
-        color: #bfc9c7;
-    }
+.nav-title:hover {
+    transform: scale(1.04);
 }
 
 .navbar-item {
@@ -37,4 +20,9 @@
     cursor: pointer;
     color: rgba(167, 226, 250, 0.98) !important;
     transform: scale(1.05);
+}
+
+.navbar-collapse {
+    display: flex !important;
+    align-items: initial !important;
 }
